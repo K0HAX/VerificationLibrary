@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="RSAlib.cs" />
     <Compile Include="Helpers.cs" />
     <Compile Include="LicenseKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
