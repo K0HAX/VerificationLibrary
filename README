@@ -1,0 +1,17 @@
+VerificationLibrary is a reference implementation and library for C# RSA signature based license key verification for .NET applications.
+
+-- KeyGen --
+This is a tool to create the RSA key pair used for the rest of the application.
+The output of this tool is an XML string that has all of the RSA parameters required to sign and verify licenses.
+
+-- LicenseGen --
+This is a tool to generate licenses based on the machine fingerprint provided by applications, or LicenseVerifier.
+You must update PrivateKey.cs using KeyGen to make this secure.
+
+-- LicenseVerifier --
+This is a tool to test the implementation, it generates a machine fingerprint and verifies license signatures.
+You must update PublicKey.cs for this to work properly.
+
+-- VerificationLib --
+This is the library that you can use in your own implementations.
+I suggest you go over the solution to see how it is best implemented. It contains some helper functions as well.
